@@ -4,17 +4,24 @@
   <meta charset="UTF-8">
   <title>TrackSkill Portal</title>
   <style>
-    html, body {
+    /* Reset everything */
+    * {
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
+    }
+    html, body {
       height: 100%;
-      overflow: hidden; /* prevents double scrollbars */
+      width: 100%;
+      overflow: hidden; /* remove scrollbars */
     }
     iframe {
-      width: 100%;
-      height: 100vh; /* full viewport height */
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;   /* full viewport width */
+      height: 100vh;  /* full viewport height */
       border: none;
-      display: block; /* removes any gaps */
     }
   </style>
 </head>
